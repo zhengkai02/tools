@@ -7,7 +7,7 @@ import java.util.Set;
 public class FiltrateFileUtil {
     public static void main(String[] args) {
         int splitSize = 100;
-        File[] str = filtrateFile("data/njty_eids.txt", splitSize);
+        File[] str = filtrateFile("data/hzyh_eids.txt", splitSize);
         deleteFile(str, "data//out/result.txt", splitSize);
     }
 
