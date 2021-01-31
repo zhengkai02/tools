@@ -4,10 +4,10 @@ import java.io.*;
 import java.util.HashSet;
 import java.util.Set;
 
-public class FileUtil {
+public class FiltrateFileUtil {
     public static void main(String[] args) {
         int splitSize = 100;
-        File[] str = filtrateFiile("data/njty_eids.txt", splitSize);
+        File[] str = filtrateFile("data/njty_eids.txt", splitSize);
         deleteFile(str, "data//out/result.txt", splitSize);
     }
 
@@ -89,7 +89,7 @@ public class FileUtil {
      * @param splitFile 拆分之后保存字符相同的文件
      * @return 返回拆分之后的文件
      */
-    public static File[] filtrateFiile(String anyFile, int splitFile) {
+    public static File[] filtrateFile(String anyFile, int splitFile) {
         BufferedReader reader = null;
         File file = new File(anyFile);
         PrintWriter[] id = new PrintWriter[splitFile];
